@@ -195,14 +195,6 @@
 .klarna-logo {
     height: 1rem;
 }
-.circle-item {
-    height: 100px;
-    width: 100px;
-    display: flex;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-}
 .circle-10 {
     --degrees: calc(10 / 100 * 360deg);
 }
@@ -217,19 +209,27 @@
 }
 
 .circle-green {
-    --circle-color: #32cd32;
+    --circle-color: rgb(139, 197, 62);
 }
 .circle-blue {
-    --circle-color: #4682b4;
+    --circle-color: rgb(64, 176, 237);
 }
 .circle-yellow {
-    --circle-color: #ffd700;
+    --circle-color: #fbc03b;
 }
 .circle-orange {
-    --circle-color: #ffa500;
+    --circle-color: #f58e39;
 }
 .circle-purple {
-    --circle-color: #800080;
+    --circle-color: #6447cc;
+}
+.circle-item {
+    height: 105px;
+    width: 105px;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
 }
 .semi-circle {
     height: 100%;
@@ -247,6 +247,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.circle-item::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 20px;
+    width: 2px;
+    background-color: white;
+    top: 0;
+    left: 50%;
+    z-index: 1;
 }
 .semi-circle.left .semi-circle-fill {
     background-color: var(--circle-color);
