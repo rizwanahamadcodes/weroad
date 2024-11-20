@@ -203,11 +203,33 @@
     overflow: hidden;
     position: relative;
 }
-.circle-210 {
-    --degrees: 270deg;
+.circle-10 {
+    --degrees: calc(10 / 100 * 360deg);
 }
+.circle-30 {
+    --degrees: calc(30 / 100 * 360deg);
+}
+.circle-60 {
+    --degrees: calc(60 / 100 * 360deg);
+}
+.circle-80 {
+    --degrees: calc(80 / 100 * 360deg);
+}
+
 .circle-green {
-    --cicle-color: green;
+    --circle-color: #32cd32;
+}
+.circle-blue {
+    --circle-color: #4682b4;
+}
+.circle-yellow {
+    --circle-color: #ffd700;
+}
+.circle-orange {
+    --circle-color: #ffa500;
+}
+.circle-purple {
+    --circle-color: #800080;
 }
 .semi-circle {
     height: 100%;
@@ -227,13 +249,13 @@
     transform: translate(-50%, -50%);
 }
 .semi-circle.left .semi-circle-fill {
-    background-color: var(--cicle-color);
+    background-color: var(--circle-color);
     transform-origin: left 50%;
     transform: translateX(100%)
         rotate(calc(max(0deg, calc(var(--degrees) - 180deg))));
 }
 .semi-circle.right .semi-circle-fill {
-    background-color: var(--cicle-color);
+    background-color: var(--circle-color);
     transform-origin: right 50%;
     transform: translateX(-100%) rotate(min(var(--degrees), 180deg));
 }
