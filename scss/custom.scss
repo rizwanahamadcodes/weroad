@@ -195,11 +195,12 @@
 .klarna-logo {
     height: 1rem;
 }
-.circle-10 {
-    --degrees: calc(10 / 100 * 360deg);
-}
+
 .circle-30 {
     --degrees: calc(30 / 100 * 360deg);
+}
+.circle-10 {
+    --degrees: calc(10 / 100 * 360deg);
 }
 .circle-60 {
     --degrees: calc(60 / 100 * 360deg);
@@ -208,20 +209,20 @@
     --degrees: calc(80 / 100 * 360deg);
 }
 
-.circle-green {
-    --circle-color: rgb(139, 197, 62);
+.percentage-item-green {
+    --percentage-item-color: rgb(139, 197, 62);
 }
-.circle-blue {
-    --circle-color: rgb(64, 176, 237);
+.percentage-item-blue {
+    --percentage-item-color: rgb(64, 176, 237);
 }
-.circle-yellow {
-    --circle-color: #fbc03b;
+.percentage-item-yellow {
+    --percentage-item-color: #fbc03b;
 }
-.circle-orange {
-    --circle-color: #f58e39;
+.percentage-item-orange {
+    --percentage-item-color: #f58e39;
 }
-.circle-purple {
-    --circle-color: #6447cc;
+.percentage-item-purple {
+    --percentage-item-color: #6447cc;
 }
 .circle-item {
     height: 105px;
@@ -261,17 +262,38 @@
     z-index: 1;
 }
 .semi-circle.left .semi-circle-fill {
-    background-color: var(--circle-color);
+    background-color: var(--percentage-item-color);
     transform-origin: left 50%;
     transform: translateX(100%)
         rotate(calc(max(0deg, calc(var(--degrees) - 180deg))));
 }
 .semi-circle.right .semi-circle-fill {
-    background-color: var(--circle-color);
+    background-color: var(--percentage-item-color);
     transform-origin: right 50%;
     transform: translateX(-100%) rotate(min(var(--degrees), 180deg));
 }
 .semi-circle-fill {
     height: 100%;
     width: 100%;
+}
+.circle {
+    position: relative;
+    width: 105px;
+}
+.percentage-item-icon {
+    height: 54px;
+    width: 54px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.percentage-number {
+    font-size: 15px;
+    color: var(--percentage-item-color);
+}
+.percentage-section {
+    padding: 4rem 0;
 }
