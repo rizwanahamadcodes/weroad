@@ -1,0 +1,168 @@
+:root {
+  --main-nav-height: 3.5rem;
+}
+
+.main-nav {
+  height: var(--main-nav-height);
+}
+
+.mini-divider {
+  width: 1px;
+}
+
+.search-box {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+}
+
+.search-icon {
+  height: 1.25rem;
+}
+
+.main-nav-list {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.main-nav-list-item {
+  position: relative;
+  height: var(--main-nav-height);
+}
+
+.main-nav-link {
+  height: var(--main-nav-height);
+  text-decoration: none;
+  height: var(--main-nav-height);
+  font-size: 15px;
+}
+
+.main-nav-link.active {
+  border-bottom: 2px solid #ff4758;
+}
+
+.main-nav-link:hover + .main-nav-dropbox-list {
+  visibility: visible;
+}
+
+.main-nav-dropbox-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+  transition: 100ms;
+  margin-top: 2px;
+}
+
+.main-nav-dropbox-list:hover {
+  visibility: visible;
+}
+
+.main-nav-dropbox-link {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.chevron-down-icon {
+  margin-left: 0.5rem;
+  height: 1.25rem;
+}
+
+.placeholder-profile-image {
+  height: 1.75rem;
+  border-radius: 1000px;
+}
+
+.nav-button {
+  height: 1.75rem;
+  border: none;
+  padding: 0.375rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-button:hover {
+  background-color: #ddd;
+}
+
+.nav-button img {
+  height: 1rem;
+}
+
+.hamburger {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger.hidden {
+  display: none;
+}
+
+.hamburger-bar {
+  display: block;
+  height: 2px;
+  width: 26px;
+  position: absolute;
+  transition: 300ms;
+}
+
+.hamburger-bar:nth-child(1) {
+  top: 13px;
+  left: 0;
+}
+
+.hamburger-bar:nth-child(2) {
+  bottom: 13px;
+  right: 0;
+}
+
+.hamburger.open .hamburger-bar {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff4758 !important;
+}
+
+.hamburger.open .hamburger-bar:nth-child(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger.open .hamburger-bar:nth-child(2) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.btn.bold {
+  font-weight: 600;
+}
+
+.mobile-nav.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: var(--main-nav-height);
+  left: 0;
+  height: 300px;
+  width: 100vw;
+  transition: 500ms;
+  z-index: 10;
+}
+
+.mobile-dropdown-link {
+  display: block;
+  height: var(--main-nav-height);
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=custom.css.map */

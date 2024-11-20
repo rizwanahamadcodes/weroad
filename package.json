@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "sass-compile": "sass scss/main.scss:css/main.css",
-        "sass-watch": "sass --watch scss/main.scss:css/main.css",
+        "sass-watch": "sass --watch scss:css",
         "start": "live-server --watch=./"
     },
     "repository": {

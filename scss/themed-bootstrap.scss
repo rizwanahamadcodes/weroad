@@ -1,0 +1,25 @@
+$font-family-sans-serif: "Montserrat", sans-serif;
+$primary: #ff4758;
+$secondary: #418089;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+// Generate text color utilities
+@each $name, $color in $grays {
+    .text-gray-#{$name} {
+        color: #{$color} !important;
+    }
+}
+
+// Generate background color utilities
+@each $name, $color in $grays {
+    .bg-gray-#{$name} {
+        background-color: #{$color} !important;
+    }
+}
+
+// Generate border color utilities
+@each $name, $color in $grays {
+    .border-gray-#{$name} {
+        border-color: #{$color} !important;
+    }
+}
