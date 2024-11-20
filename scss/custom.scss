@@ -45,6 +45,9 @@
     visibility: hidden;
     transition: 100ms;
     margin-top: 2px;
+    border: 1px solid #efefef;
+    overflow: hidden;
+    border-radius: 4px;
 }
 .main-nav-dropbox-list:hover {
     visibility: visible;
@@ -53,6 +56,7 @@
 .main-nav-dropbox-link {
     font-size: 14px;
     text-decoration: none;
+    background-color: white;
 }
 .chevron-down-icon {
     margin-left: 0.5rem;
@@ -123,6 +127,7 @@
     opacity: 0;
 }
 .mobile-nav {
+    background-color: white;
     position: absolute;
     top: var(--main-nav-height);
     left: 0;
@@ -135,4 +140,11 @@
     display: block;
     height: var(--main-nav-height);
     font-size: 15px;
+}
+
+.section {
+    padding: 1rem 0;
+}
+.trust-pilot-logo {
+    width: 100px;
 }
