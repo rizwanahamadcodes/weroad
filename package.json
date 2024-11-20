@@ -1,0 +1,19 @@
+{
+  "name": "weroad",
+  "version": "1.0.0",
+  "description": "we road travel website project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizwanahamadcodes/weroad.git"
+  },
+  "author": "Rizwan Ahamad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizwanahamadcodes/weroad/issues"
+  },
+  "homepage": "https://github.com/rizwanahamadcodes/weroad#readme"
+}
