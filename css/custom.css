@@ -229,4 +229,61 @@
   width: 1.125rem;
 }
 
+.klarna-logo {
+  height: 1rem;
+}
+
+.circle-item {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.circle-210 {
+  --degrees: 270deg;
+}
+
+.circle-green {
+  --cicle-color: green;
+}
+
+.semi-circle {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+.circle-item::after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.semi-circle.left .semi-circle-fill {
+  background-color: var(--cicle-color);
+  transform-origin: left 50%;
+  transform: translateX(100%) rotate(max(0deg, var(--degrees) - 180deg));
+}
+
+.semi-circle.right .semi-circle-fill {
+  background-color: var(--cicle-color);
+  transform-origin: right 50%;
+  transform: translateX(-100%) rotate(min(var(--degrees), 180deg));
+}
+
+.semi-circle-fill {
+  height: 100%;
+  width: 100%;
+}
+
 /*# sourceMappingURL=custom.css.map */
