@@ -374,4 +374,25 @@
   width: 100px;
 }
 
+.section-map {
+  padding: 5rem 0;
+  background-color: #171717;
+  background-image: url("/assests/img/map-light.png");
+  background-repeat: repeat;
+  background-size: 40%;
+  background-blend-mode: overlay;
+}
+
+.map-image {
+  border-radius: 1.5rem;
+}
+
+.trip-plan-list li::marker {
+  color: red;
+}
+
+.trip-plan-list li:not(:first-child) {
+  list-style-type: circle;
+}
+
 /*# sourceMappingURL=custom.css.map */
