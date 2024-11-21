@@ -331,3 +331,33 @@
 .trip-plan-list li:not(:first-child) {
     list-style-type: circle;
 }
+.section-travel-cordinates {
+    padding: 5rem 0;
+}
+.coordinators-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    padding-left: 50px;
+}
+.coordinator-img {
+    border-radius: 1000px;
+    height: 160px;
+    border: 4px solid white;
+}
+.coordinator-img:nth-child(1) {
+    position: relative;
+    left: 0;
+}
+.coordinator-img:nth-child(2) {
+    position: relative;
+    left: -50px;
+}
+.coordinator-img:nth-child(3) {
+    position: relative;
+    left: -100px;
+}
+.coordinator-img:nth-child(4) {
+    position: relative;
+    left: -150px;
+}
