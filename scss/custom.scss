@@ -338,26 +338,27 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     display: flex;
-    padding-left: 50px;
+    flex-direction: column;
+}
+@media screen and (min-width: 1120px) {
+    .coordinator-img:nth-child(1) {
+        left: 0;
+    }
+    .coordinator-img:nth-child(2) {
+        left: -50px;
+    }
+    .coordinator-img:nth-child(3) {
+        left: -100px;
+    }
+    .coordinator-img:nth-child(4) {
+        left: -150px;
+    }
 }
 .coordinator-img {
     border-radius: 1000px;
     height: 160px;
+    width: 160px;
     border: 4px solid white;
-}
-.coordinator-img:nth-child(1) {
     position: relative;
-    left: 0;
-}
-.coordinator-img:nth-child(2) {
-    position: relative;
-    left: -50px;
-}
-.coordinator-img:nth-child(3) {
-    position: relative;
-    left: -100px;
-}
-.coordinator-img:nth-child(4) {
-    position: relative;
-    left: -150px;
+    object-fit: cover;
 }
